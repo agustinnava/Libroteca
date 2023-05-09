@@ -1,3 +1,36 @@
+nav{
+  background: #000000ad;
+  backdrop-filter: blur(14px);
+}
+.img{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.38);
+}
+.underline{
+  display:inline-block;
+}
+.underline:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.underline:hover:after {
+  transform: scaleX(1);
+}
+
 .App {
   text-align: center;
 }
