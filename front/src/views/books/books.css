@@ -1,31 +1,35 @@
+.book-container{
+  padding-top: 10rem;
+}
+
 .img{
-    transition: filter 0.3s ease;
-  }
+  transition: filter 0.3s ease;
+}
   
-  .image-container {
-    position: relative;
-  }
+.image-container {
+  position: relative;
+}
   
-  .image-container:hover .img {
-    filter: brightness(0.7);
-  }
+.image-container:hover .img {
+  filter: brightness(0.7);
+}
   
-  .ver-mas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: white!important;
-    background-color: #4B53F2!important;
-  }
+.ver-mas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white!important;
+  background-color: #4B53F2!important;
+}
   
-  .image-container:hover .ver-mas {
-    opacity: 1;
-  }
+.image-container:hover .ver-mas {
+  opacity: 1;
+}
   

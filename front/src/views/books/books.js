@@ -1,7 +1,6 @@
 import '../books/books.css';
 
 function Home() {
-
   return (
     <div className="books">
       <div class="book-container container row justify-content-center m-auto flex-nowrap my-5">
