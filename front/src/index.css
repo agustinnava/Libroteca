@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.nav{
+  color: #30323D!important;
+}
+
 .logo{
   color: #30323D!important;
   font-size: 3.5rem!important;
