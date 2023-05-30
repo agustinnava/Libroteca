@@ -1,5 +1,5 @@
-import '../App.css';
-import banner from '../banner.png';
+import '../home/home.css';
+import banner from '../home/banner.png';
 
 function Home() {
 
@@ -23,7 +23,7 @@ function Home() {
           </div>
 
           <div className='col-6 p-0'>
-            <img src={banner} style={{ maxWidth: '100%', height: 'auto' }}></img>
+            <img src={banner} alt='banner' style={{ maxWidth: '100%', height: 'auto' }}></img>
           </div>
         </div>
       </div>
