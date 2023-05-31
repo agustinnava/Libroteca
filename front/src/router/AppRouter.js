@@ -2,7 +2,7 @@ import React from 'react'
 import { Route,  BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from '../views/home/home';
 import Books from '../views/books/books';
-import Header from '../components/Header';
+import Header from '../components/header/Header';
 import AdminLibros from '../views/admin/adminLibros';
  
 export const AppRouter = () => { 

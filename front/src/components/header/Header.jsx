@@ -1,5 +1,7 @@
-import { NavLink, useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+
+import '../header/header.css';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-      <nav  className={`navbar navbar-expand-lg justify-content-center fixed-top px-5 py-4 ${scrolled ? 'scrolled' : ''}`}>
+      <nav  className={`navbar navbar-expand-lg justify-content-center fixed-top px-5 py-4 ${scrolled ? 'scrolled shadow-bottom' : ''}`}>
         <div class="container-fluid row">
           <div class="col-6 text-start">
             <a class="navbar-brand logo fw-bold fs-2" href="/">Libroteca</a>

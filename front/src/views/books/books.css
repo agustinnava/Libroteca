@@ -12,17 +12,10 @@ h2{
   padding: 10rem 0rem;
   background-color: #E8EEFE!important;   
 }
-
-.img{
-  transition: filter 0.3s ease;
-}
-  
-.image-container {
-  position: relative;
-}
   
 .image-container:hover .img {
   filter: brightness(0.7);
+  border: 3px solid #4B53F2;
 }
   
 .ver-mas {
@@ -43,4 +36,3 @@ h2{
 .image-container:hover .ver-mas {
   opacity: 1;
 }
-  

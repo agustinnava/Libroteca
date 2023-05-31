@@ -25,7 +25,7 @@ p{
   font-family: 'Hind-Marudai';
 }
 
-.banner button, nav button{
+.banner .btn, nav button{
   color: white!important;
   background-color: #4B53F2!important;
   transition: 0.5s!important;
@@ -35,7 +35,7 @@ p{
   -o-transition: 0.5s!important;
 }
 
-.banner button:hover, nav button:hover{
+.banner .btn:hover, nav button:hover{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
