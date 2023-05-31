@@ -17,6 +17,15 @@ code {
   color: #30323D!important;
 }
 
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: white;
+}
+
 .logo{
   color: #30323D!important;
   font-size: 3.5rem!important;

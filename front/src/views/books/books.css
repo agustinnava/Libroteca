@@ -1,5 +1,16 @@
-.book-container{
-  padding-top: 10rem;
+@font-face {
+  font-family: 'Montserrat-Extrabold';
+  src: url('../../fonts/montserrat/static/Montserrat-Bold.ttf') format('truetype');
+}
+
+h2{
+  font-size: 2.5rem!important;
+  font-family: 'Montserrat-Extrabold';
+}
+
+.search-container{
+  padding: 10rem 0rem;
+  background-color: #E8EEFE!important;   
 }
 
 .img{

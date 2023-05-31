@@ -1,10 +1,28 @@
 import { NavLink, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
   const navigate = useNavigate();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-      <nav class="navbar navbar-expand-lg justify-content-center fixed-top px-5 py-4">
+      <nav  className={`navbar navbar-expand-lg justify-content-center fixed-top px-5 py-4 ${scrolled ? 'scrolled' : ''}`}>
         <div class="container-fluid row">
           <div class="col-6 text-start">
             <a class="navbar-brand logo fw-bold fs-2" href="/">Libroteca</a>
@@ -32,7 +50,6 @@ const Header = () => {
         </div>
       </nav>
   );
-
 }
 
 export default Header;
