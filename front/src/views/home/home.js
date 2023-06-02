@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import banner from '../home/banner.png';
 import FadeUpAnimation from '../../components/animations/fade-up';

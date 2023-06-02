@@ -7,3 +7,17 @@
 .butgroup {
   background-color: #fff!important;
 }
+
+thead{
+  background-color: #4B53F2!important;
+}
+
+.add{
+  color: white!important;
+  background-color: #4B53F2!important;
+  transition: 0.5s!important;
+}
+
+.add:hover{
+  transform: scale(1.1);
+}

@@ -31,6 +31,7 @@ h2{
   transition: opacity 0.3s ease;
   color: white!important;
   background-color: #4B53F2!important;
+  text-decoration: none;
 }
   
 .image-container:hover .ver-mas {
