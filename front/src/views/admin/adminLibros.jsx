@@ -28,12 +28,7 @@ function AdminLibros() {
   return (
     <div className="admin">
       <div className="admin-container container row justify-content-center m-auto flex-wrap my-5">
-        {/* <div className="custom-shape-divider-top">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" className="shape-fill"></path>
-          </svg>
-        </div> */}
-        <table className="table table-bordered table-hover">
+        <table className="table table-bordered table-hover p-10">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -74,11 +69,11 @@ function AdminLibros() {
           </tbody>
         </table>
         {/* <section className='d-flex justify-content-end'>
-          <div class="btn-group me-2 butgroup" role="group" aria-label="First group">
-            <button type="button" class="btn btn-outline-secondary"><Icon icon={faAnglesLeft} /></button>
-            <button type="button" class="btn btn-outline-secondary"><Icon icon={faChevronLeft} /></button>
-            <button type="button" class="btn btn-outline-secondary"><Icon icon={faChevronRight} /></button>
-            <button type="button" class="btn btn-outline-secondary"><Icon icon={faAnglesRight} /></button>
+          <div className="btn-group me-2 butgroup" role="group" aria-label="First group">
+            <button type="button" className="btn btn-outline-secondary"><Icon icon={faAnglesLeft} /></button>
+            <button type="button" className="btn btn-outline-secondary"><Icon icon={faChevronLeft} /></button>
+            <button type="button" className="btn btn-outline-secondary"><Icon icon={faChevronRight} /></button>
+            <button type="button" className="btn btn-outline-secondary"><Icon icon={faAnglesRight} /></button>
           </div>
         </section> */}
       </div>

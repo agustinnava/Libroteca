@@ -1,35 +1,22 @@
-// const baseUrl = 'http://localhost:3000/api'
+const baseUrl = 'http://localhost:5101/api/libros'
 
 export const getLibros = async () => {
-  // const response = await fetch(`${baseUrl}/getLibros`);
-  // const jsonData = await response.json();
-  // console.log(jsonData);
+  const response = await fetch(baseUrl, {
+    method: "GET",
+    // mode: "cors", // no-cors, *cors, same-origin
+    // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    // credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "text/plain",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    // redirect: "follow", // manual, *follow, error
+    // referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    // body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  const jsonData = await response.json();
+  console.log(jsonData);
   // devolveria array de libros o array vacio
 
-  return [{
-      id: '1',
-      titulo: 'titulo 1',
-      descripcion: 'xcififonr fsen foesn fpen fene ',
-    },
-    {
-      id: '2',
-      titulo: 'titulo 2',
-      descripcion: 'Lorem ipsum excif foesn fpen fene ',
-    },
-    {
-      id: '3',
-      titulo: 'titulo 3',
-      descripcion: 'Loreexcififonr fsen foesn fpen fene ',
-    },
-    {
-      id: '4',
-      titulo: 'titulo 4',
-      descripcion: 'Lorem ipsum excififonr fsen foesn fpen fene This text is quite long, and will be truncated once displayed.',
-    },
-    {
-      id: '5',
-      titulo: 'titulo 5',
-      descripcion: 'Lorem ipsum excififonr fene ',
-    }
-  ];
+  return jsonData;
 }

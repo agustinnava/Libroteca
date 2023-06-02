@@ -1,0 +1,64 @@
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\appsettings.Development.json
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\appsettings.json
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\LibrotecaApi.exe
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\LibrotecaApi.deps.json
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\LibrotecaApi.runtimeconfig.json
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\LibrotecaApi.dll
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\LibrotecaApi.pdb
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\VisualStudio\practica\LibrotecaApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.csproj.AssemblyReference.cache
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.AssemblyInfoInputs.cache
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.AssemblyInfo.cs
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.csproj.CoreCompileInputs.cache
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.MvcApplicationPartsAssemblyInfo.cs
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.MvcApplicationPartsAssemblyInfo.cache
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets\msbuild.LibrotecaApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets\msbuild.build.LibrotecaApi.props
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LibrotecaApi.props
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LibrotecaApi.props
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets.pack.json
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets.build.json
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\staticwebassets.development.json
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\scopedcss\bundle\LibrotecaApi.styles.css
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.csproj.CopyComplete
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.dll
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\refint\LibrotecaApi.dll
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.pdb
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\LibrotecaApi.genruntimeconfig.cache
+D:\VisualStudio\practica\LibrotecaApi\obj\Debug\net6.0\ref\LibrotecaApi.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.csproj.AssemblyReference.cache
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.AssemblyInfoInputs.cache
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.AssemblyInfo.cs
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.csproj.CoreCompileInputs.cache
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.MvcApplicationPartsAssemblyInfo.cache
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\refint\LibrotecaApi.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.pdb
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\appsettings.Development.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\appsettings.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\LibrotecaApi.exe
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\LibrotecaApi.deps.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\LibrotecaApi.runtimeconfig.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\LibrotecaApi.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\LibrotecaApi.pdb
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets\msbuild.LibrotecaApi.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets\msbuild.build.LibrotecaApi.props
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LibrotecaApi.props
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LibrotecaApi.props
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets.build.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\staticwebassets.development.json
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\scopedcss\bundle\LibrotecaApi.styles.css
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.csproj.CopyComplete
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.genruntimeconfig.cache
+E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\ref\LibrotecaApi.dll
