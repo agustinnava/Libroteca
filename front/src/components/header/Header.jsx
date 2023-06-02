@@ -25,9 +25,9 @@ const Header = () => {
 
   return (
       <nav  className={`navbar navbar-expand-lg justify-content-center fixed-top px-5 py-4 ${scrolled ? 'scrolled shadow-bottom' : ''}`}>
-        <div class="container-fluid row">
-          <div class="col-6 text-start">
-            <a class="navbar-brand logo fw-bold fs-2" href="/">Libroteca</a>
+        <div className="container-fluid row">
+          <div className="col-6 text-start">
+            <a className="navbar-brand logo fw-bold fs-2" href="/">Libroteca</a>
           </div>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
