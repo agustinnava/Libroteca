@@ -62,3 +62,6 @@ E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net
 E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.csproj.CopyComplete
 E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.genruntimeconfig.cache
 E:\Unlam\4to Cuatrimestre\Programacion Web III\TP\pw3-apiRest\back\obj\Debug\net6.0\ref\LibrotecaApi.dll
+C:\Users\janne\Source\Repos\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.dll
+C:\Users\janne\Source\Repos\pw3-apiRest\back\obj\Debug\net6.0\refint\LibrotecaApi.dll
+C:\Users\janne\Source\Repos\pw3-apiRest\back\obj\Debug\net6.0\LibrotecaApi.pdb
