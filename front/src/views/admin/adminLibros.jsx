@@ -105,7 +105,7 @@ function AdminLibros() {
           </div>
         </section> */}
         <div className='text-end'>
-          <NavLink to="/libro/agregar" className='btn add fs-5 px-4 rounded-pill' >Agregar libro</NavLink>
+          <NavLink to="/libro/agregar" className='btn add-button fs-5 px-4 rounded-pill' >Agregar libro</NavLink>
         </div>
       </div>
     </div>

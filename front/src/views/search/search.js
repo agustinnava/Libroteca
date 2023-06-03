@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import FadeDownAnimation from '../../components/animations/fade-down';
 
-import './books.css';
+import './search.css';
 
 function Home() {
   return (
@@ -10,12 +10,12 @@ function Home() {
       <div className="search-container">
         <h2 className="text-center mb-5">Encontra el libro que estas buscando</h2>
         <form className="container">
-          <input className="form-control rounded-pill p-3 ps-4 w-50 m-auto"
+          <input className="form-control search rounded-pill p-3 ps-4 w-50 m-auto"
             placeholder="Búsqueda por título, autor o categoria"></input>
         </form>
       </div>
       <div className="book-container container row justify-content-center m-auto flex-wrap my-5">
-
+        <h3 className="text-start ps-4 mb-5">Últimos agregados</h3>
         <div className='col-3 scroll-animation-container image-container px-4 mb-5'>
           <FadeDownAnimation>
             <img src="https://www.lanormal.com.ar/media/libros/bd4be862594dc7fdb53166047e87f2af.jpg"

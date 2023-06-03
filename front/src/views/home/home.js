@@ -17,9 +17,9 @@ function Home() {
         <div className='banner row m-auto'>
           <div className='col-6 pe-5 text-start'>
             <FadeUpAnimation>
-              <h1 className='mb-5'>Explora un mundo de conocimiento con nuestra API de libros</h1>
+              <h1 className='mb-5'>Utiliza nuestra API para acceder a una gran colección de libros</h1>
               <p className='mb-4 pe-5'>Descubre una amplia variedad de libros de todos los géneros, desde clásicos hasta 
-              bestsellers. Obtén información detallada sobre cada libro, como sinopsis, autor, calificaciones y más. 
+              bestsellers. Obtén información detallada sobre cada libro, como sinopsis, autor y más. 
               Ya sea que estés buscando inspiración, investigación o entretenimiento, nuestra API te proporcionará 
               acceso a una vasta biblioteca virtual para satisfacer tus necesidades literarias.</p>
               <NavLink to="/libros" className='btn fs-4 fw-bold px-4 rounded-pill' >¡Empezá ahora!</NavLink>

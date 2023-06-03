@@ -12,12 +12,12 @@ thead{
   background-color: #4B53F2!important;
 }
 
-.add{
+.add-button{
   color: white!important;
   background-color: #4B53F2!important;
   transition: 0.5s!important;
 }
 
-.add:hover{
+.add-button:hover{
   transform: scale(1.1);
 }
