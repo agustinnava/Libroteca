@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\back"
+    "\\back",
+    "\\Libroteca",
+    "\\Libroteca\\Libroteca"
   ],
-  "SelectedNode": "\\back",
+  "SelectedNode": "\\Libroteca\\Libroteca\\WeatherForecast.cs",
   "PreviewInSolutionExplorer": false
 }

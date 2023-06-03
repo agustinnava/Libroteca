@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Libroteca/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
