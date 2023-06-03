@@ -6,27 +6,27 @@ import './detail.css';
 function Home() {
   return (
     <div className="detail">
-      <div class="detail-container container">
+      <div className="detail-container container">
         <FadeDownAnimation>
-          <div class="card shadow-lg border-0">
-            <div class="card-body my-5">
-              <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-6">
-                  <div class="white-box text-center">
+          <div className="card shadow-lg border-0">
+            <div className="card-body my-5">
+              <div className="row">
+                <div className="col-lg-5 col-md-5 col-sm-6">
+                  <div className="white-box text-center">
                     <img src='https://covers.alibrate.com/b/59872e8dcba2bce50c1ab489/39baeac9-de71-4ca2-9f46-90d47af8a34e/share'
-                      class="img-responsive rounded" width="80%" height="600px"></img>
+                      className="img-responsive rounded" width="80%" height="600px"></img>
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-6">
+                <div className="col-lg-7 col-md-7 col-sm-6">
                   <div className='me-5'>
-                    <h2 class="titulo">Coraline</h2>
-                    <h3 class="text-muted fs-5 mb-3 autor">Neil gaiman (autor)</h3>
-                    <hr class="border opacity-100"></hr>
+                    <h2 className="titulo">Coraline</h2>
+                    <h3 className="text-muted fs-5 mb-3 autor">Neil gaiman (autor)</h3>
+                    <hr className="border opacity-100"></hr>
                   </div>
 
                   <div className='sinopsis-container rounded mt-3 me-5'>
                     <span className='fs-4 fw-bold sinopsis'>Sinopsis</span>
-                    <p class="contenido mt-3">Una historia juvenil, bastante original y entretenida, donde no faltará intriga ni acción durante toda
+                    <p className="contenido mt-3">Una historia juvenil, bastante original y entretenida, donde no faltará intriga ni acción durante toda
                       su lectura. Al día siguiente de mudarse de casa, Coraline explora las catorce puertas de su nuevo hogar.
                       Trece se pueden abrir con normalidad, pero la decimocuarta está cerrada y tapiada. Cuando por fin consigue
                       abrirla, Coraline se encuentra con un pasadizo secreto que la conduce a otra casa tan parecida a la suya que
@@ -38,7 +38,7 @@ function Home() {
                       y cumplir así el desafío que le permitirá volver a su vida anterior.</p>
                   </div>
 
-                  <span class="fs-5 fw-bold categoria">Categoria</span>
+                  <span className="fs-5 fw-bold categoria">Categoria</span>
                   <p className='border border-dark text-center rounded-pill p-1 mt-3 w-25'>Literatura juvenil</p>
                 </div>
               </div>

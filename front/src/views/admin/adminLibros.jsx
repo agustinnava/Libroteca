@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-/*import { getLibros } from '../../endpoints/librosEnpoints';*/
+import { getLibros } from '../../endpoints/librosEnpoints';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import {
   faTrashCan, faPenToSquare, faAnglesRight, faAnglesLeft, faChevronRight,
@@ -10,7 +10,7 @@ import {
 import './admin.css'
 
 function AdminLibros() {
-  /*const [librosList, setLibrosList] = useState([]);
+  const [librosList, setLibrosList] = useState([]);
 
   const handleCLick = (action) => {
     console.log(action);
@@ -22,7 +22,7 @@ function AdminLibros() {
     }
 
     traerLibros();
-  }, [])*/
+  }, [])
 
   return (
     <div className="admin">
@@ -62,7 +62,7 @@ function AdminLibros() {
               <td>Libro 2</td>
               <td>Autor 2</td>
               <td>Categoría 2</td>
-              <td class="text-center">
+              <td className="text-center">
 
               </td>
             </tr>
