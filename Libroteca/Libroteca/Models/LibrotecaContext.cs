@@ -96,8 +96,7 @@ public partial class LibrotecaContext : DbContext
             entity.Property(e => e.GeneroId).HasColumnName("genero_id");
             entity.Property(e => e.ImagenId).HasColumnName("imagen_id");
             entity.Property(e => e.Sinapsis)
-                .HasMaxLength(500)
-                .IsUnicode(false)
+                .HasColumnType("text")
                 .HasColumnName("sinapsis");
             entity.Property(e => e.Titulo)
                 .HasMaxLength(100)
