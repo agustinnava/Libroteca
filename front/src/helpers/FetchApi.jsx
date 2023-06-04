@@ -2,7 +2,7 @@ const baseUrl = 'https://localhost:7107/api'
 
 export const fetchGET = async (url) => {
   try {
-    const response = await fetch(baseUrl + url, {
+    const response = await fetch(baseUrl+url, {
       method: "GET",
       headers: {
         "Content-Type": "text/plain",
@@ -18,10 +18,10 @@ export const fetchGET = async (url) => {
 
 export const fetchPOST = async (url, data) => {
   try {
-    const response = await fetch(baseUrl + url, {
+    const response = await fetch(baseUrl+url, {
       method: "POST",
       headers: {
-        'Content-Type': 'application/json/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
     });

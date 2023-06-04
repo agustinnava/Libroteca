@@ -28,7 +28,7 @@ namespace Libroteca.Controllers
           {
               return NotFound();
           }
-            return await _context.Libros.ToListAsync();
+            return await _context.Libros.Include("Autor").Include("Genero").ToListAsync();
         }
 
         // GET: api/Libroteca/5

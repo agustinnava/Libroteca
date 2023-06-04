@@ -33,45 +33,17 @@ function AdminLibros() {
               <th scope="col text-center">#</th>
               <th scope="col">Título</th>
               <th scope="col">Autor</th>
-              <th scope="col">Categoria</th>
+              <th scope="col">Género</th>
               <th scope="col text-center">Acciones</th>
             </tr>
           </thead>
           <tbody className='fs-5'>
-            <tr>
-              <td>1</td>
-              <td>Libro 1</td>
-              <td>Autor 1</td>
-              <td>Categoría 1</td>
-              <td>
-              <div className="d-flex justify-content-start gap-2">
-              <button className="btn btn-info text-light" type="button" >
-                      <Icon icon={faEye} size='lg' />
-                    </button>
-                    <button className="btn btn-warning text-light" type="button" >
-                    <Icon icon={faPenToSquare} size='lg'/>
-                    </button>
-                    <button className="btn btn-danger" type="button" >
-                      <Icon icon={faTrashCan} size='lg' />
-                    </button>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Libro 2</td>
-              <td>Autor 2</td>
-              <td>Categoría 2</td>
-              <td className="text-center">
-
-              </td>
-            </tr>
-            {/*librosList? librosList.map((libro, i) => (
+            {librosList? librosList.map((libro, i) => (
               <tr key={i}>
-                <th scope="row">{libro.id}</th>
+                <th>{libro.id}</th>
                 <td>{libro.titulo}</td>
-                <td>{libro.autor}</td>
-                <td>{libro.categoria}</td>
+                <td>{libro.autor.nombreApellido}</td>
+                <td>{libro.genero.nombre}</td>
                 <td>
                   <div className="d-flex justify-content-start gap-2">
                   <button className="btn btn-info text-light" type="button" onClick={() => handleCLick('view')}>
@@ -88,15 +60,16 @@ function AdminLibros() {
               </tr> ))
             : (
               <tr>
-                <td colSpan={4}>
+                <td colSpan={5}>
                   <p className='text-center lead'>Sin libros</p>
                 </td>
               </tr>
             )
-            */}
+            }
           </tbody>
         </table>
-        {/* <section className='d-flex justify-content-end'>
+        {/* si llegamos -> paginacion de tabla
+        <section className='d-flex justify-content-end'>
           <div className="btn-group me-2 butgroup" role="group" aria-label="First group">
             <button type="button" className="btn btn-outline-secondary"><Icon icon={faAnglesLeft} /></button>
             <button type="button" className="btn btn-outline-secondary"><Icon icon={faChevronLeft} /></button>
