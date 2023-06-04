@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getLibros } from '../../endpoints/librosEnpoints';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
@@ -10,10 +10,15 @@ import {
 import './admin.css'
 
 function AdminLibros() {
+  const navigate = useNavigate();
   const [librosList, setLibrosList] = useState([]);
 
-  const handleCLick = (action) => {
-    console.log(action);
+  const handleCLick = (id, action) => {
+    navigate(`/libro/${action}`, {state: {libroId: id}})
+  }
+
+  const handleDelete = (id) => {
+    alert("tas seguro?")
   }
 
   useEffect(() => {
@@ -46,13 +51,13 @@ function AdminLibros() {
                 <td>{libro.genero.nombre}</td>
                 <td>
                   <div className="d-flex justify-content-start gap-2">
-                  <button className="btn btn-info text-light" type="button" onClick={() => handleCLick('view')}>
+                  <button className="btn btn-info text-light" type="button" onClick={() => handleCLick(libro.id, 'detalle')}>
                       <Icon icon={faEye} size='lg' />
                     </button>
-                    <button className="btn btn-warning text-light" type="button" onClick={() => handleCLick('update')}>
+                    <button className="btn btn-warning text-light" type="button" onClick={() => handleCLick(libro.id, 'editar')}>
                       <Icon icon={faPenToSquare} size='lg' />
                     </button>
-                    <button className="btn btn-danger" type="button" onClick={() => handleCLick('delete')}>
+                    <button className="btn btn-danger" type="button" onClick={() => handleDelete(libro.id)}>
                       <Icon icon={faTrashCan} size='lg' />
                     </button>
                   </div>

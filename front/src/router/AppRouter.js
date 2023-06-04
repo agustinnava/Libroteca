@@ -6,6 +6,7 @@ import Books from '../views/search/search';
 import Detail from '../views/detail/detail';
 import Header from '../components/header/Header';
 import AdminLibros from '../views/admin/adminLibros';
+import Edit from '../views/edit/edit';
  
 export const AppRouter = () => { 
 
@@ -17,6 +18,7 @@ export const AppRouter = () => {
         <Route  path='/libros' element={<Books />}/>
         <Route  path='/libro/detalle' element={<Detail />}/>
         <Route  path='/libro/agregar' element={<Add />}/>
+        <Route  path='/libro/editar' element={<Edit />}/>
         <Route  path='/admin' element={<AdminLibros />}/>
       </Routes>
     </Router>
