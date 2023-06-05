@@ -41,7 +41,7 @@ const Header = () => {
                 <NavLink to="/libros" className='nav nav-link fs-5 underline'>Libros</NavLink>
               </li>
               <li className="nav-item me-lg-3">
-                <a className='nav-link fs-5 underline' href="#">Documentación</a>
+                <a className='nav-link fs-5 underline' href="https://localhost:7107/swagger/index.html" target="_blank">Documentación</a>
               </li>
               <li className="nav-item me-lg-3">
                 <a className='nav-link fs-5 underline' href="#">Nosotros</a>
