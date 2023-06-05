@@ -1,10 +1,26 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import FadeDownAnimation from '../../components/animations/fade-down';
 
 import './search.css';
+import { getLibros } from '../../endpoints/librosEnpoints';
 
 function Home() {
+  const navigate = useNavigate();
+  const [librosList, setLibrosList] = useState([]);
+
+  const goDetails = (id) => {
+    navigate(`/libro/detalle`, {state: {libroId: id}})
+  }
+
+  useEffect(() => {
+    const traerLibros = async () => {
+      setLibrosList(await getLibros());
+    }
+
+    traerLibros();
+  }, [])
+
   return (
     <div className="books">
       <div className="search-container">
@@ -16,7 +32,16 @@ function Home() {
       </div>
       <div className="book-container container row justify-content-center m-auto flex-wrap my-5">
         <h3 className="text-start ps-4 mb-5">Últimos agregados</h3>
-        <div className='col-3 scroll-animation-container image-container px-4 mb-5'>
+        {librosList? librosList.map((libro, i) => (
+          <div key={i} className='col-sm-6 col-md-4 col-lg-4 col-xl-3 scroll-animation-container image-container px-4 mb-5'>
+            <FadeDownAnimation>
+              <img alt="" src="https://www.lanormal.com.ar/media/libros/bd4be862594dc7fdb53166047e87f2af.jpg"
+                className="rounded img" width="100%" height="400px"></img>
+              <button onClick={() => goDetails(libro.id)} className="ver-mas rounded">Ver más</button>
+            </FadeDownAnimation>
+          </div>
+        )) : null}
+        {/* <div className='col-3 scroll-animation-container image-container px-4 mb-5'>
           <FadeDownAnimation>
             <img src="https://www.lanormal.com.ar/media/libros/bd4be862594dc7fdb53166047e87f2af.jpg"
               className="rounded img" width="100%" height="400px"></img>
@@ -78,7 +103,7 @@ function Home() {
               className="rounded img" width="100%" height="400px"></img>
             <button className="ver-mas rounded">Ver más</button>
           </FadeDownAnimation>
-        </div>
+        </div> */}
       </div>
     </div>
   );

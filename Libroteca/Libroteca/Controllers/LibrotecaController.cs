@@ -34,7 +34,7 @@ namespace Libroteca.Controllers
           {
               return NotFound();
           }
-            var libro = await _context.Libros.FindAsync(id);
+            var libro = await _context.Libros.Include("Autor").Include("Genero").FirstOrDefaultAsync(l => l.Id == id);
 
             if (libro == null)
             {
