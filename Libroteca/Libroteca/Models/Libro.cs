@@ -11,8 +11,6 @@ public partial class Libro
 
     public string Sinopsis { get; set; } = null!;
 
-    public string? Contenido { get; set; }
-
     public string Imagen { get; set; } = null!;
 
     public DateTime FechaEmision { get; set; }
