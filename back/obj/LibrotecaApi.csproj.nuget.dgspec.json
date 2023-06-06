@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\back\\LibrotecaApi.csproj": {}
+    "C:\\Users\\hp\\Documents\\GitHub\\pw3-apiRest\\back\\LibrotecaApi.csproj": {}
   },
   "projects": {
-    "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\back\\LibrotecaApi.csproj": {
+    "C:\\Users\\hp\\Documents\\GitHub\\pw3-apiRest\\back\\LibrotecaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\back\\LibrotecaApi.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\pw3-apiRest\\back\\LibrotecaApi.csproj",
         "projectName": "LibrotecaApi",
-        "projectPath": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\back\\LibrotecaApi.csproj",
-        "packagesPath": "C:\\Users\\dami_\\.nuget\\packages\\",
-        "outputPath": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\back\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\pw3-apiRest\\back\\LibrotecaApi.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\pw3-apiRest\\back\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dami_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

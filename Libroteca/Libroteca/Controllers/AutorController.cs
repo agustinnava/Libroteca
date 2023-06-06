@@ -92,7 +92,7 @@ namespace Libroteca.Controllers
             _context.Autors.Add(autor);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAutor", new { id = autor.Id }, autor);
+            return CreatedAtAction(nameof(GetAutor), new { id = autor.Id }, autor);
         }
 
         // DELETE: api/Autor/5
