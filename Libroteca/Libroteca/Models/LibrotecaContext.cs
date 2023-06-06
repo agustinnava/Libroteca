@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Libroteca.Models;
 
@@ -19,19 +17,17 @@ public partial class LibrotecaContext : DbContext
 
     public virtual DbSet<Genero> Generos { get; set; }
 
-    public virtual DbSet<Imagene> Imagenes { get; set; }
-
     public virtual DbSet<Libro> Libros { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.\\SQLExpress; Database=libroteca;trusted_connection=true;encrypt=false;");
+        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=libroteca;trusted_connection=true;encrypt=false;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Autor>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__autor__3213E83FF4DBD2A2");
+            entity.HasKey(e => e.Id).HasName("PK__autor__3213E83FD87ECE51");
 
             entity.ToTable("autor");
 
@@ -51,7 +47,7 @@ public partial class LibrotecaContext : DbContext
 
         modelBuilder.Entity<Genero>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__genero__3213E83F1FB2DAA6");
+            entity.HasKey(e => e.Id).HasName("PK__genero__3213E83F2AD2F477");
 
             entity.ToTable("genero");
 
@@ -62,26 +58,9 @@ public partial class LibrotecaContext : DbContext
                 .HasColumnName("nombre");
         });
 
-        modelBuilder.Entity<Imagene>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__imagenes__3213E83F67793FAD");
-
-            entity.ToTable("imagenes");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Nombre)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("nombre");
-            entity.Property(e => e.Url)
-                .HasMaxLength(200)
-                .IsUnicode(false)
-                .HasColumnName("url");
-        });
-
         modelBuilder.Entity<Libro>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__libro__3213E83FCB78FC75");
+            entity.HasKey(e => e.Id).HasName("PK__libro__3213E83FBEBECC2B");
 
             entity.ToTable("libro");
 
@@ -94,10 +73,13 @@ public partial class LibrotecaContext : DbContext
                 .HasColumnType("date")
                 .HasColumnName("fecha_emision");
             entity.Property(e => e.GeneroId).HasColumnName("genero_id");
-            entity.Property(e => e.ImagenId).HasColumnName("imagen_id");
-            entity.Property(e => e.Sinapsis)
+            entity.Property(e => e.Imagen)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("imagen");
+            entity.Property(e => e.Sinopsis)
                 .HasColumnType("text")
-                .HasColumnName("sinapsis");
+                .HasColumnName("sinopsis");
             entity.Property(e => e.Titulo)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -106,17 +88,12 @@ public partial class LibrotecaContext : DbContext
             entity.HasOne(d => d.Autor).WithMany(p => p.Libros)
                 .HasForeignKey(d => d.AutorId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__libro__autor_id__164452B1");
+                .HasConstraintName("FK__libro__autor_id__19DFD96B");
 
             entity.HasOne(d => d.Genero).WithMany(p => p.Libros)
                 .HasForeignKey(d => d.GeneroId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__libro__genero_id__182C9B23");
-
-            entity.HasOne(d => d.Imagen).WithMany(p => p.Libros)
-                .HasForeignKey(d => d.ImagenId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__libro__imagen_id__173876EA");
         });
 
         OnModelCreatingPartial(modelBuilder);

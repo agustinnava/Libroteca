@@ -30,7 +30,7 @@ function Detail() {
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-6">
                   <div className="white-box text-center">
-                    <img alt="Tapa de libro" src='https://covers.alibrate.com/b/59872e8dcba2bce50c1ab489/39baeac9-de71-4ca2-9f46-90d47af8a34e/share'
+                    <img alt="Tapa de libro" src={libro.imagen}
                       className="img-responsive rounded" width="80%" height="600px"></img>
                   </div>
                 </div>
@@ -43,7 +43,7 @@ function Detail() {
 
                   <div className='sinopsis-container rounded mt-3 me-5'>
                     <span className='fs-4 fw-bold sinopsis'>Sinopsis</span>
-                    <p className="contenido mt-3">{libro.sinapsis}</p>
+                    <p className="contenido mt-3">{libro.sinopsis}</p>
                   </div>
 
                   <span className="fs-5 fw-bold categoria">Género</span>

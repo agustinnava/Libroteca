@@ -1,4 +1,4 @@
-import { fetchGET, fetchPOST } from "../helpers/FetchApi";
+import { fetchDELETE, fetchGET, fetchPOST, fetchPUT } from "../helpers/FetchApi";
 
 export const getLibros = async () => {
   const response = await fetchGET('/Libroteca');
@@ -12,5 +12,15 @@ export const getDetalleLibro = async (id) => {
 
 export const addLibro = async (libro) => {
   const response = await fetchPOST(`/Libroteca`, libro);
+  return response;
+}
+
+export const editLibro = async (libro) => {
+  const response = await fetchPUT(`/Libroteca/${libro.id}`, libro);
+  return response;
+}
+
+export const deleteLibro = async (id) => {
+  const response = await fetchDELETE(`/Libroteca/${id}`);
   return response;
 }

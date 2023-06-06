@@ -24,18 +24,18 @@ function Home() {
   return (
     <div className="books">
       <div className="search-container">
-        <h2 className="text-center mb-5">Encontra el libro que estas buscando</h2>
+        {/* <h2 className="text-center mb-5">Encontra el libro que estas buscando</h2>
         <form className="container">
           <input className="form-control search rounded-pill p-3 ps-4 w-50 m-auto"
             placeholder="Búsqueda por título, autor o categoria"></input>
-        </form>
+        </form> */}
       </div>
       <div className="book-container container row justify-content-center m-auto flex-wrap my-5">
         <h3 className="text-start ps-4 mb-5">Últimos agregados</h3>
         {librosList? librosList.map((libro, i) => (
           <div key={i} className='col-sm-6 col-md-4 col-lg-4 col-xl-3 scroll-animation-container image-container px-4 mb-5'>
             <FadeDownAnimation>
-              <img alt="" src="https://www.lanormal.com.ar/media/libros/bd4be862594dc7fdb53166047e87f2af.jpg"
+              <img alt="" src={libro.imagen}
                 className="rounded img" width="100%" height="400px"></img>
               <button onClick={() => goDetails(libro.id)} className="ver-mas rounded">Ver más</button>
             </FadeDownAnimation>

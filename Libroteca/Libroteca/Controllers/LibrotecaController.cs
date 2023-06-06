@@ -59,7 +59,19 @@ namespace Libroteca.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(libro).State = EntityState.Modified;
+            Libro? libroAEditar = await _context.Libros.FirstOrDefaultAsync(l => l.Id == id);
+            Autor? autor = _context.Autors.Find(libro.AutorId);
+            Genero? genero = _context.Generos.Find(libro.GeneroId);
+
+            libroAEditar.Titulo = libro.Titulo;
+            libroAEditar.AutorId = libro.AutorId;
+            libroAEditar.GeneroId = libro.GeneroId;
+            libroAEditar.Sinopsis = libro.Sinopsis;
+            libroAEditar.Autor = autor;
+            libroAEditar.Genero = genero;
+            libroAEditar.Imagen = libro.Imagen;
+
+            _context.Entry(libroAEditar).State = EntityState.Modified;
 
             try
             {
@@ -89,10 +101,23 @@ namespace Libroteca.Controllers
           {
               return Problem("Entity set 'LibrotecaContext.Libros'  is null.");
           }
-            _context.Libros.Add(libro);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetLibro", new { id = libro.Id }, libro);
+            Autor? autor = _context.Autors.Find(libro.AutorId);
+            Genero? genero = _context.Generos.Find(libro.GeneroId);
+            Libro libroNuevo = new Libro() {
+                Titulo = libro.Titulo,
+                AutorId = libro.AutorId,
+                GeneroId = libro.GeneroId,
+                Sinopsis = libro.Sinopsis,
+                Autor = autor,
+                Genero = genero,
+                Imagen = libro.Imagen
+            };
+
+        _context.Libros.Add(libroNuevo);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction("GetLibro", new { id = libro.Id }, libro);
         }
 
         // DELETE: api/Libroteca/5

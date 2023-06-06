@@ -1,11 +1,9 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { getLibros } from '../../endpoints/librosEnpoints';
+import { deleteLibro, getLibros } from '../../endpoints/librosEnpoints';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import {
-  faTrashCan, faPenToSquare, faAnglesRight, faAnglesLeft, faChevronRight,
-  faChevronLeft, faEye
-} from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan, faPenToSquare, faEye } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2';
 
 import './admin.css'
 
@@ -17,8 +15,28 @@ function AdminLibros() {
     navigate(`/libro/${action}`, {state: {libroId: id}})
   }
 
-  const handleDelete = (id) => {
-    alert("tas seguro?")
+  const handleDelete = async (id) => {
+    Swal.fire({
+      title: 'Estas seguro?',
+      text: "No se puede deshacer",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, eliminar',
+      cancelButtonText: 'Cancelar'
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        await deleteLibro(id);
+        setLibrosList(librosList.filter((libro) => libro.id != id));
+        Swal.fire(
+          'Eliminado!',
+          `El libro ha sido eliminado.`,
+          'success'
+        )
+      }
+    })
+
   }
 
   useEffect(() => {
@@ -73,15 +91,6 @@ function AdminLibros() {
             }
           </tbody>
         </table>
-        {/* si llegamos -> paginacion de tabla
-        <section className='d-flex justify-content-end'>
-          <div className="btn-group me-2 butgroup" role="group" aria-label="First group">
-            <button type="button" className="btn btn-outline-secondary"><Icon icon={faAnglesLeft} /></button>
-            <button type="button" className="btn btn-outline-secondary"><Icon icon={faChevronLeft} /></button>
-            <button type="button" className="btn btn-outline-secondary"><Icon icon={faChevronRight} /></button>
-            <button type="button" className="btn btn-outline-secondary"><Icon icon={faAnglesRight} /></button>
-          </div>
-        </section> */}
         <div className='text-end'>
           <NavLink to="/libro/agregar" className='btn add-button fs-5 px-4 rounded-pill' >Agregar libro</NavLink>
         </div>
