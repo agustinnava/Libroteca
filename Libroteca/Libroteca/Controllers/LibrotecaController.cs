@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Libroteca.Models;
 
@@ -50,7 +45,6 @@ namespace Libroteca.Controllers
         }
 
         // PUT: api/Libroteca/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutLibro(int id, Libro libro)
         {
@@ -93,7 +87,6 @@ namespace Libroteca.Controllers
         }
 
         // POST: api/Libroteca
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Libro>> PostLibro(Libro libro)
         {

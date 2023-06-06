@@ -1,7 +1,7 @@
 import { fetchGET } from "../helpers/FetchApi";
 
 export const getAutores = async () => {
-  const response = await fetchGET('/Autor');
+  const response = await fetchGET('/Autor', 'https://localhost:7130/');
   return response;
 }
 
