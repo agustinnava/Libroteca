@@ -1,4 +1,4 @@
-USE libroteca;
+CREATE DATABASE libroteca;
 
 /* CREACION BASE DE DATOS */
 
