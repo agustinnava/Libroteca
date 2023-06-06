@@ -18,7 +18,6 @@ CREATE TABLE libro (
     id INT IDENTITY(1,1) PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
     sinopsis TEXT NOT NULL,
-    contenido TEXT NULL,
     imagen VARCHAR(100) NOT NULL,
     fecha_emision DATE NOT NULL,
     autor_id INT NOT NULL,
