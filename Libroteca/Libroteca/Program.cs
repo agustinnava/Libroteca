@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "_frontReactOrigins",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000");
+            policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
         });
 });
 
@@ -36,9 +36,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
 app.UseCors("_frontReactOrigins");
+
+app.UseAuthorization();
 
 app.MapControllers();
 

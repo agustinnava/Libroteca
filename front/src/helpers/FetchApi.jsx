@@ -13,6 +13,7 @@ export const fetchGET = async (url) => {
     return jsonData;
   } catch (err) {
     console.error(err);
+    return null;
   }
 }
 
@@ -29,5 +30,39 @@ export const fetchPOST = async (url, data) => {
     return jsonData;
   } catch (err) {
     console.error(err);
+    return null;
+  }
+}
+
+export const fetchDELETE = async (url) => {
+  try {
+    const response = await fetch(baseUrl+url, {
+      method: "DELETE",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const jsonData = await response.json();
+    return jsonData;
+  } catch (err) {
+    console.error(err);
+    return null;
+  }
+}
+
+export const fetchPUT = async (url, data) => {
+  try {
+    await fetch(baseUrl+url, {
+      method: "PUT",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    return true;
+  } catch (err) {
+    console.error(err);
+    return null;
   }
 }
