@@ -1,9 +1,8 @@
 const baseUrl = 'https://localhost:7107/api'
 
-export const fetchGET = async (url, base) => {
-  const fetchUrl = base ? base+url : baseUrl+url;
+export const fetchGET = async (url) => {
   try {
-    const response = await fetch(fetchUrl, {
+    const response = await fetch(baseUrl+url, {
       method: "GET",
       headers: {
         "Content-Type": "text/plain",
