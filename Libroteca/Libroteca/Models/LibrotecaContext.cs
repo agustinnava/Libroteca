@@ -66,9 +66,6 @@ public partial class LibrotecaContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AutorId).HasColumnName("autor_id");
-            entity.Property(e => e.Contenido)
-                .HasColumnType("text")
-                .HasColumnName("contenido");
             entity.Property(e => e.FechaEmision)
                 .HasColumnType("date")
                 .HasColumnName("fecha_emision");
