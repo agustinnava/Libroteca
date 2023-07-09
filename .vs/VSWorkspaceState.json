@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AutorService",
-    "\\AutorService\\Properties",
-    "\\Libroteca",
-    "\\Libroteca\\Libroteca"
+    "\\Libroteca\\Libroteca",
+    "\\MicroservicioMongoDB"
   ],
-  "SelectedNode": "\\AutorService\\AutorService.sln",
+  "SelectedNode": "\\MicroservicioMongoDB\\MicroservicioMongoDB.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PCDhJ0dOm4msevkz0BUE6SU5LNui592TwG1Gj08Yvac=",
+  "Source": "MicroservicioMongoDB",
+  "BasePath": "_content/MicroservicioMongoDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
