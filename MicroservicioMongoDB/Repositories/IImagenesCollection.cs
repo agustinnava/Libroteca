@@ -13,7 +13,7 @@ namespace MicroservicioMongoDB.Repositories
         Task DeleteImagen(string id); //En mongo el id es un string
         Task<List<Imagenes>> GetAllImagenes();
         Task<Imagenes> GetImagenesById(string id);
-
+        Task<Imagenes> GetImagenesByLibroId(int libroId);
 
 
     }
@@ -43,6 +43,11 @@ namespace MicroservicioMongoDB.Repositories
         {
             return await Collection.FindAsync(
                 new BsonDocument { { "_id", new ObjectId(id)} }).Result.FirstAsync();
+        }
+
+        public async Task<Imagenes> GetImagenesByLibroId(int libroIdParam)
+        {
+            return await Collection.Find(img => img.LibroId == libroIdParam).FirstAsync();
         }
 
         public async Task InsertImagen(Imagenes imagen)

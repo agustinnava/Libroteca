@@ -15,10 +15,21 @@ namespace MicroservicioMongoDB.Controllers
         {
             return Ok(await db.GetAllImagenes());
         }
+
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetImagenDetails(string id)
+        public async Task<IActionResult> GetImagenDetails(int id)
         {
-            return Ok(await db.GetAllImagenes());
+
+            Imagenes imagen = await db.GetImagenesByLibroId(id);
+
+            if (imagen != null)
+            {
+                return Ok(imagen);
+            }
+            else
+            {
+                return NoContent();
+            }
         }
 
         [HttpPost]

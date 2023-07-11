@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Libroteca\\Libroteca",
-    "\\MicroservicioMongoDB"
+    "\\MicroservicioMongoDB",
+    "\\MicroservicioMongoDB\\Controllers",
+    "\\MicroservicioMongoDB\\Models",
+    "\\MicroservicioMongoDB\\Repositories"
   ],
-  "SelectedNode": "\\MicroservicioMongoDB\\MicroservicioMongoDB.sln",
+  "SelectedNode": "\\MicroservicioMongoDB.sln",
   "PreviewInSolutionExplorer": false
 }
