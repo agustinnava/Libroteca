@@ -4,7 +4,7 @@ using MicroservicioMongoDB.Models;
 
 namespace MicroservicioMongoDB.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("mongoDB/[controller]")]
     [ApiController]
     public class ImagenesController : Controller
     {

@@ -74,7 +74,7 @@ VALUES ('1', 'Harry Potter y la piedra filosofal', 'Harry Potter se ha quedado h
 	   imaginaciones de nuestro tiempo. En La niebla, historia inicial del libro, extensa como una novela, un supermercado se convierte 
 	   en último bastión de la humanidad al invadir la tierra un enemigo inimaginable... En los desvanes hay cosas que conviene dejar 
 	   tranquilas, cosas como El mono... La más soberbia conductora del mundo le ofrece a un hombre El atajo de la señora Todd, para 
-	   llegar antes al paraíso... En fin, todo un ramillete de emociones y escalofríos, cuyas flores se abren por la noche...', '1980-01-01', 2, 'https://www.resumenlibro.com/img/libros/la-niebla.jpg', 9),
+	   llegar antes al paraíso... En fin, todo un ramillete de emociones y escalofríos, cuyas flores se abren por la noche...', '1980-01-01', 2, 'https://images.gr-assets.com/books/1423846309l/24926354.jpg', 9),
 
 	   ('3', 'El imperio final', 'El imperio final inicia la saga Nacidos de la Bruma [Mistborn], obra imprescindible del Cosmere, el
 	   universo destinado a dar forma a la serie más extensa y fascinante jamás escrita en el ámbito de la fantasía épica. Durante mil 

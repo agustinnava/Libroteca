@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AutorService.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
 
-    public class AutorController : ControllerBase
+    [Route("microservice/[controller]")]
+	[ApiController]
+	public class AutorController : ControllerBase
     {
         private readonly AutorServiceContext _context;
 

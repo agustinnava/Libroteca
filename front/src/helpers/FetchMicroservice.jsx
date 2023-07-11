@@ -1,4 +1,4 @@
-const baseUrl = 'https://localhost:7130/'
+const baseUrl = 'https://localhost:7130/microservice'
 
 export const fetchGET = async (url) => {
   try {

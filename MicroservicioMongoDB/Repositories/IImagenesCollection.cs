@@ -14,13 +14,14 @@ namespace MicroservicioMongoDB.Repositories
         Task<List<Imagenes>> GetAllImagenes();
         Task<Imagenes> GetImagenesById(string id);
         Task<Imagenes> GetImagenesByLibroId(int libroId);
-
-
     }
+
     public class ImagenesCollection : IImagenesCollection
     {
+
         internal MongoDbRepository _repository = new MongoDbRepository();
         private IMongoCollection<Imagenes> Collection;
+
         public ImagenesCollection() 
         {
             Collection = _repository.db.GetCollection<Imagenes>("Imagenes"); //mongo lo crea si no existe
@@ -41,8 +42,7 @@ namespace MicroservicioMongoDB.Repositories
 
         public async Task<Imagenes> GetImagenesById(string id)
         {
-            return await Collection.FindAsync(
-                new BsonDocument { { "_id", new ObjectId(id)} }).Result.FirstAsync();
+            return await Collection.FindAsync(new BsonDocument { { "_id", new ObjectId(id)} }).Result.FirstAsync();
         }
 
         public async Task<Imagenes> GetImagenesByLibroId(int libroIdParam)

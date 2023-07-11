@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Libroteca.Models;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Libroteca.Controllers
 {
@@ -97,10 +99,10 @@ namespace Libroteca.Controllers
         [HttpPost]
         public async Task<ActionResult<Libro>> PostLibro(Libro libro)
         {
-          if (_context.Libros == null)
-          {
-              return Problem("Entity set 'LibrotecaContext.Libros'  is null.");
-          }
+            if (_context.Libros == null)
+            {
+                return Problem("Entity set 'LibrotecaContext.Libros'  is null.");
+            }
 
             Autor? autor = _context.Autors.Find(libro.AutorId);
             Genero? genero = _context.Generos.Find(libro.GeneroId);
@@ -114,10 +116,44 @@ namespace Libroteca.Controllers
                 Imagen = libro.Imagen
             };
 
-        _context.Libros.Add(libroNuevo);
-        await _context.SaveChangesAsync();
+            _context.Libros.Add(libroNuevo);
+            await _context.SaveChangesAsync();
 
-        return CreatedAtAction("GetLibro", new { id = libro.Id }, libro);
+            // Crear objeto de tipo Imagenes con los datos necesarios
+            Imagenes imagen = new Imagenes
+            { 
+                id = null,
+                url = "https://example.com/image.jpg",
+                libroId = libro.Id
+			};
+
+			// Serializar el objeto Imagenes a JSON
+			string imagenJson = JsonConvert.SerializeObject(imagen);
+
+			// Crear una instancia de HttpClient
+			using (HttpClient httpClient = new HttpClient())
+			{
+				// Configurar la URL del endpoint
+				string url = "https://localhost:7039/mongoDB/Imagenes";
+
+				// Crear el contenido de la solicitud HTTP
+				HttpContent content = new StringContent(imagenJson, Encoding.UTF8, "application/json");
+
+				// Enviar la solicitud HTTP POST
+				HttpResponseMessage response = await httpClient.PostAsync(url, content);
+
+				// Verificar si la solicitud fue exitosa
+				if (response.IsSuccessStatusCode)
+				{
+					return CreatedAtAction("GetLibro", new { id = libro.Id }, libro);
+				}
+				else
+				{
+					return StatusCode((int)response.StatusCode);
+				}
+			}
+
+			return NoContent();
         }
 
         // DELETE: api/Libroteca/5

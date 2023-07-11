@@ -16,12 +16,10 @@ namespace MicroservicioMongoDB.Repositories
             //A la derecha -> How do i format my connection string
             //(Documentacion si configuraron con usuario y contraseña durante la instalacion de mongoDB)
             //Si se configra sin user ni pass, queda de la siguiente manera el connection string: 
-            client = new MongoClient("mongodb://127.0.0.1:27017");
+            client = new MongoClient("mongodb://localhost:27017");
 
             //creamos la base de datos o la instanciamos si existe
             db = client.GetDatabase("Libroteca"); //esta linea crea la bdd
-            
-
         }  
     }
 }

@@ -964,19 +964,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dami_\\.nuget\\packages\\": {}
+    "C:\\Users\\agust\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\MicroservicioMongoDB\\MicroservicioMongoDB.csproj",
+      "projectUniqueName": "C:\\Users\\agust\\OneDrive\\Desktop\\pw3-apiRest\\MicroservicioMongoDB\\MicroservicioMongoDB.csproj",
       "projectName": "MicroservicioMongoDB",
-      "projectPath": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\MicroservicioMongoDB\\MicroservicioMongoDB.csproj",
-      "packagesPath": "C:\\Users\\dami_\\.nuget\\packages\\",
-      "outputPath": "E:\\Unlam\\4to Cuatrimestre\\Programacion Web III\\TP\\pw3-apiRest\\MicroservicioMongoDB\\obj\\",
+      "projectPath": "C:\\Users\\agust\\OneDrive\\Desktop\\pw3-apiRest\\MicroservicioMongoDB\\MicroservicioMongoDB.csproj",
+      "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agust\\OneDrive\\Desktop\\pw3-apiRest\\MicroservicioMongoDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dami_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

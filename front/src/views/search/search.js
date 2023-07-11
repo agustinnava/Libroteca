@@ -24,6 +24,7 @@ function Home() {
   return (
     <div className="books">
       <div className="search-container">
+        <h2 className='text-center'>Explorá nuestra colección de libros</h2>
         {/* <h2 className="text-center mb-5">Encontra el libro que estas buscando</h2>
         <form className="container">
           <input className="form-control search rounded-pill p-3 ps-4 w-50 m-auto"

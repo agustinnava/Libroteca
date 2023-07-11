@@ -49,26 +49,27 @@ function AdminLibros() {
 
   return (
     <div className="admin">
-      <div className="admin-container container row justify-content-center m-auto flex-wrap my-5">
+      <div className="admin-container container row justify-content-center m-auto flex-wrap mt-3">
+        <h2 className='mb-5'>Panel de administración</h2>
         <table className="table table-hover rounded">
           <thead className='fs-4'>
             <tr>
-              <th scope="col text-center">#</th>
+              <th scope="col" className='text-center'>#</th>
               <th scope="col">Título</th>
               <th scope="col">Autor</th>
               <th scope="col">Género</th>
-              <th scope="col text-center">Acciones</th>
+              <th scope="col" className='text-center'>Acciones</th>
             </tr>
           </thead>
           <tbody className='fs-5'>
             {librosList? librosList.map((libro, i) => (
               <tr key={i}>
-                <th>{libro.id}</th>
+                <th className='text-center'>{libro.id}</th>
                 <td>{libro.titulo}</td>
                 <td>{libro.autor.nombreApellido}</td>
                 <td>{libro.genero.nombre}</td>
                 <td>
-                  <div className="d-flex justify-content-start gap-2">
+                  <div className="d-flex justify-content-center gap-2">
                   <button className="btn btn-info text-light" type="button" onClick={() => handleCLick(libro.id, 'detalle')}>
                       <Icon icon={faEye} size='lg' />
                     </button>
@@ -91,7 +92,7 @@ function AdminLibros() {
             }
           </tbody>
         </table>
-        <div className='text-end'>
+        <div className='text-end mt-3'>
           <NavLink to="/libro/agregar" className='btn add-button fs-5 px-4 rounded-pill' >Agregar libro</NavLink>
         </div>
       </div>

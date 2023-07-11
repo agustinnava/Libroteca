@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import FadeUpAnimation from '../../components/animations/fade-up';
 import Swal from 'sweetalert2';
 import './add.css';
+
 import { getGeneros } from '../../endpoints/generoEndpoints';
 import { getAutores } from '../../endpoints/autoresEnpoints';
 import { addLibro } from '../../endpoints/librosEnpoints';
@@ -11,7 +12,8 @@ function Home() {
   const navigate = useNavigate();
   const [ generosList, setGenerosList ] = useState([]);
   const [ autoresList, setAutoresList ] = useState([]);
-  const [ libro, setLibro ] = useState({
+  
+  let [ libro, setLibro ] = useState({
     id: 0,
     titulo: "",
     sinopsis: "",
@@ -106,7 +108,8 @@ function Home() {
 
               <div className="fw-bold fs-5 mb-3">
                 <label className="form-label" htmlFor="sinopsis">Sinopsis</label>
-                <textarea className="form-control fs-5" id="sinopsis" rows="4" name="sinopsis" onChange={handleChange} defaultValue="Escribe un breve resumen sobre lo que trata el libro."></textarea>
+                <textarea className="form-control fs-5" id="sinopsis" rows="4" name="sinopsis" onChange={handleChange} 
+                          placeholder="Escribe un breve resumen sobre lo que trata el libro."></textarea>
               </div>
 
               <div className='text-end mt-4'>
