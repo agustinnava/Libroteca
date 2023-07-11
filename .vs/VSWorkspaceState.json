@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Libroteca",
     "\\Libroteca\\Libroteca",
+    "\\Libroteca\\Libroteca\\Controllers",
     "\\MicroservicioMongoDB",
     "\\MicroservicioMongoDB\\Controllers",
     "\\MicroservicioMongoDB\\Models",
