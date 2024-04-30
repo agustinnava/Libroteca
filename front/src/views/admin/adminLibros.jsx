@@ -12,7 +12,7 @@ function AdminLibros() {
   const [librosList, setLibrosList] = useState([]);
 
   const handleCLick = (id, action) => {
-    navigate(`/libro/${action}`, {state: {libroId: id}})
+    navigate(`/libro/${action}`, { state: { libroId: id } })
   }
 
   const handleDelete = async (id) => {
@@ -31,7 +31,7 @@ function AdminLibros() {
         setLibrosList(librosList.filter((libro) => libro.id != id));
         Swal.fire(
           'Eliminado!',
-          `El libro ha sido eliminado.`,
+          `El producto ha sido eliminado del local con.`,
           'success'
         )
       }
@@ -62,7 +62,7 @@ function AdminLibros() {
             </tr>
           </thead>
           <tbody className='fs-5'>
-            {librosList? librosList.map((libro, i) => (
+            {librosList ? librosList.map((libro, i) => (
               <tr key={i}>
                 <th className='text-center'>{libro.id}</th>
                 <td>{libro.titulo}</td>
@@ -70,7 +70,7 @@ function AdminLibros() {
                 <td>{libro.genero.nombre}</td>
                 <td>
                   <div className="d-flex justify-content-center gap-2">
-                  <button className="btn btn-info text-light" type="button" onClick={() => handleCLick(libro.id, 'detalle')}>
+                    <button className="btn btn-info text-light" type="button" onClick={() => handleCLick(libro.id, 'detalle')}>
                       <Icon icon={faEye} size='lg' />
                     </button>
                     <button className="btn btn-warning text-light" type="button" onClick={() => handleCLick(libro.id, 'editar')}>
@@ -81,14 +81,14 @@ function AdminLibros() {
                     </button>
                   </div>
                 </td>
-              </tr> ))
-            : (
-              <tr>
-                <td colSpan={5}>
-                  <p className='text-center lead'>Sin libros</p>
-                </td>
-              </tr>
-            )
+              </tr>))
+              : (
+                <tr>
+                  <td colSpan={5}>
+                    <p className='text-center lead'>Sin libros</p>
+                  </td>
+                </tr>
+              )
             }
           </tbody>
         </table>
